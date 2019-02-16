@@ -7,9 +7,10 @@ dotenv.config({
     path: './.env'
 });
 
-var geocodeApiKey = process.env.GOOGLE_API_KEY;
 var geocodeAddress = (address, callback) => {
     var encodedAddress = encodeURIComponent(address);
+    var geocodeApiKey = process.env.GOOGLE_API_KEY;
+
     request({
         url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' +
         `${encodedAddress}&key=${geocodeApiKey}`,
