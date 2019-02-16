@@ -1,5 +1,4 @@
 const request = require('request');
-const fs = require('fs');
 const dotenv = require('dotenv');
 
 // setting up the dotenv config
