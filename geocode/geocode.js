@@ -7,8 +7,7 @@ dotenv.config({
     path: './.env'
 });
 
-const geocodeApiKey = fs.readFileSync('./geocode/geocode-api-key.txt');
-console.log(process.env.GOOGLE_API_KEY);
+var geocodeApiKey = process.env.GOOGLE_API_KEY;
 var geocodeAddress = (address, callback) => {
     var encodedAddress = encodeURIComponent(address);
     request({
