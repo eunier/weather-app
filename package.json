@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/eunier14/weather-app#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "request": "^2.88.0",
     "yargs": "^4.8.1"
-  }
+  },
+  "devDependencies": {}
 }

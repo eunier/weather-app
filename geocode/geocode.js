@@ -1,7 +1,14 @@
 const request = require('request');
 const fs = require('fs');
-const geocodeApiKey = fs.readFileSync('./geocode/geocode-api-key.txt');
+const dotenv = require('dotenv');
 
+// setting up the dotenv config
+dotenv.config({
+    path: './.env'
+});
+
+const geocodeApiKey = fs.readFileSync('./geocode/geocode-api-key.txt');
+console.log(process.env.GOOGLE_API_KEY);
 var geocodeAddress = (address, callback) => {
     var encodedAddress = encodeURIComponent(address);
     request({
