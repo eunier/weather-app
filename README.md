@@ -5,7 +5,7 @@ Weather node app that use google geolocation api and dark sky api.
 
 ## Requirements
 * Download [npm](https://www.npmjs.com/).
-* Ruh: `npm install` from project root.
+* Run: `npm install` from project root.
 * Get an [Google API key](https://developers.google.com/maps/documentation/geolocation/get-api-key).
 * Get an [DarkSky API key](https://darksky.net/dev).
 * Add `.env` file to root of the project and edit as follow:
